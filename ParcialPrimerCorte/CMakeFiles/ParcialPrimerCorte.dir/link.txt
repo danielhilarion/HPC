@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ParcialPrimerCorte.dir/main.cpp.o CMakeFiles/ParcialPrimerCorte.dir/Functions/functions.cpp.o  -o ParcialPrimerCorte 

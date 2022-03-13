@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/functions.cpp
+functions.h
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/functions.h
+eigen3/Eigen/Dense
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/eigen3/Eigen/Dense
+
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/functions.h
+iostream
+-
+eigen3/Eigen/Dense
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/eigen3/Eigen/Dense
+
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/main.cpp
+Functions/functions.h
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/Functions/functions.h
+iostream
+-
+eigen3/Eigen/Dense
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/eigen3/Eigen/Dense
+

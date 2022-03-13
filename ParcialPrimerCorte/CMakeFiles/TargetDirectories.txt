@@ -1,0 +1,3 @@
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/CMakeFiles/edit_cache.dir
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/CMakeFiles/rebuild_cache.dir
+/home/daniel/Desktop/RedesNeuronales/Parcial 1/ParcialPrimerCorte/CMakeFiles/ParcialPrimerCorte.dir
