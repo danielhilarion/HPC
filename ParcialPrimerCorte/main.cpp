@@ -37,9 +37,10 @@ int main(){
     Matrix23d MatrizP = objeto.MatrixP();
     Matrix32d MatrizC = objeto.MatrixC();
     //Objetos caso 8 menú principal
-    Eigen::Matrix2i matrixA = objeto.GenA();
-    Eigen::Matrix2i matrixB = objeto.GenB();
-    Eigen::Matrix2i matrixC = objeto.GenC();
+    Eigen::Matrix2d matrixesA = objeto.GenA();
+    Eigen::Matrix2d matrixesB = objeto.GenB();
+    Eigen::Matrix2d matrixesC = objeto.GenC();
+    Eigen::Matrix2d matrixesI = objeto.GenI();
 
 
 
@@ -57,7 +58,7 @@ int main(){
         cout << "5. Sistema de ecuaciones con matrices "<<endl;
         cout << "6. Análisis de problemas usando matrices "<<endl;
         cout << "7. Rango de una matriz "<<endl;
-        cout << "8. Ecuaciones de una incógnita en matrices "<<endl;
+        cout << "8. Ecuaciones de una matr Eigen::Matrix2i Genc();ixA+matrixBincógnita en matrices "<<endl;
         cout << "9. De un sistema de ecuaciones a una matriz"<<endl;
         cout << "10. EXIT "<<endl;
 
@@ -108,8 +109,7 @@ int main(){
                        cout << "Multiplicación entre matrices (B*A)"<<endl;
                        cout << matrixB*matrixA<<endl;
                     break;
-                       switch(opcion1)
-                       {
+
                     case 5:
                        cout << "A^{t}"<<endl;
                        cout << matrixA.transpose()<<endl;
@@ -154,7 +154,7 @@ int main(){
                 cout<<(matriza+(matrizb*-2))/7<<endl;
                 cout<<""<<endl;
                 cout<<"Ecuación 1 * 3 y suma por elemento"<<endl;
-                cout<<(matriza*3)+matriswitch(opcion1)<<endl;
+                cout<<(matriza*3)+matrizb<<endl;
                 cout<<""<<endl;
                 cout<<"___________----Se despeja A----______"<<endl;
                 cout<<((matriza*3)+matrizb)/7<<endl;
@@ -196,30 +196,41 @@ int main(){
                 cout << "4. AX+BX=C"<<endl;
                 cout << "5. XAB-XC=2"<<endl;
 
-       switch(opcion3){
-            case 1:
-                system("clear");
-                cout << "1) XA = B + I"<<endl;
-                cout<<""<<(MBEI+MIEI)*(MAEI.inverse())<<endl<<endl;
-                break;
-             case 2:
-                system("clear");
-                cout << "2) C  = B + AX"<<endl;
-                cout<<"\n"<<(MAEI.inverse())*(MCEI-MBEI)<<endl<<endl;
-                break;
-             case 3:
-                system("clear");
-                cout << "3) 2C = B + XA"<<endl;
-                cout<<"\n"<<((2*MCEI)-MBEI)*(MAEI.inverse())<<endl<<endl;
-                break;
-             case 4:
-                system("clear");
-                cout << "4) C = BX + AX"<<endl;
-                cout<<"\n"<<((MAEI+MBEI).inverse())*MCEI<<endl<<endl;
-                break;
-             case 5:
-                system("clear");
-                cout << "5) 2C = XC + XAB"<<endl;
-                cout<<"\n"<<((2*MCEI)*((MAEI*MBEI)-MCEI).inverse())<<endl<<endl;
-                break;
+                cin>>opcion3;
+
+                switch(opcion3){
+                    case 1:
+                        system("clear");
+                        cout << "1. XA = B + I"<<endl;
+                        cout<<""<<(matrixesB+matrixesI)*(matrixesA.inverse())<<endl<<endl;
+                        break;
+                     case 2:
+                        system("clear");
+                        cout << "2. C  = B + AX"<<endl;
+                        cout<<"\n"<<(matrixesA.inverse())*(matrixesC-matrixesB)<<endl<<endl;
+                        break;
+                     case 3:
+                        system("clear");
+                        cout << "3. 2C = B + XA"<<endl;
+                        cout<<"\n"<<((2*matrixesC)-matrixesB)*(matrixesA.inverse())<<endl<<endl;
+                        break;
+                     case 4:
+                        system("clear");
+                        cout << "4. C = BX + AX"<<endl;
+                        cout<<"\n"<<((matrixesA+matrixesB).inverse())*matrixesC<<endl<<endl;
+                        break;
+                     case 5:
+                        system("clear");
+                        cout << "5. 2C = XC + XAB"<<endl;
+                        cout<<"\n"<<((2*matrixesC)*((matrixesA*matrixesB)-matrixesC).inverse())<<endl<<endl;
+                        break;
+
+                     default:cout<<"Incorrecto";
+             }
+
         }
+    }while(start==0);
+
+        return 0;
+      }
+

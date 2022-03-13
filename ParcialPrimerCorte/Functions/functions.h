@@ -31,10 +31,11 @@ public:
     //Caso 6
         Eigen::MatrixXd MatrixP();
         Eigen::MatrixXd MatrixC();
-    //Caso 1
-        Eigen::Matrix3i GenA();
-        Eigen::Matrix3i GenB();
-        Eigen::Matrix3i GenB();
+    //Caso 8
+        Eigen::Matrix2d GenA();
+        Eigen::Matrix2d GenB();
+        Eigen::Matrix2d GenC();
+        Eigen::Matrix2d GenI();
 };
 
 #endif // FUNCTIONS_H

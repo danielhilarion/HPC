@@ -103,21 +103,27 @@ Eigen::MatrixXd functions::MatrixC(){
 }
 
 //°°°°°°°°°°°°°°Funciones caso 8°°°°°°°°°°
-Eigen::Matrix3i functions::GenA(){
-    Eigen::Matrix2i a;
+Eigen::Matrix2d functions::GenA(){
+    Eigen::Matrix2d a;
     a << 1, 1,
          3, 4;
     return a;
 }
-Eigen::Matrix3i functions::GenB(){
-    Eigen::Matrix2i b;
+Eigen::Matrix2d functions::GenB(){
+    Eigen::Matrix2d b;
     b << 2, 1,
          1, 1;
-    return a;
+    return b;
 }
-Eigen::Matrix2i functions::GenC(){
-    Eigen::Matrix3i c;
+Eigen::Matrix2d functions::GenC(){
+    Eigen::Matrix2d c;
     c << 1, 2,
          1, 3;
-    return a;
+    return c;
+}
+Eigen::Matrix2d functions::GenI(){
+    Eigen::Matrix2d i;
+    i << 1, 0,
+         0, 1;
+    return i;
 }
